@@ -7,7 +7,7 @@ body {
 	font-family: "Poppins", Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	color: #e8edf2;
-	background-color: #22272d;
+	background-color: #0b1118;
 }
 
 section {
@@ -15,7 +15,6 @@ section {
 }
 
 #intro {
-	position: relative;
 	padding-top: 16px;
 	padding-bottom: 8px;
 }
@@ -75,34 +74,6 @@ nav a.active {
 	color: #00b894;
 }
 
-.hero {
-	min-height: 360px;
-	padding-right: 460px;
-}
-
-.tagline {
-	font-size: 20px;
-	font-weight: 600;
-	color: #ffffff;
-}
-
-.about {
-	max-width: 460px;
-	font-size: 14px;
-	color: #c3cad2;
-}
-
-.photo {
-	position: absolute;
-	top: 50%;
-	right: 6%;
-	transform: translateY(-50%);
-	width: 300px;
-	height: 300px;
-	object-fit: cover;
-	clip-path: circle();
-}
-
 .button {
 	display: inline-block;
 	margin-top: 12px;
@@ -118,6 +89,139 @@ nav a.active {
 .button:hover {
 	background: #ffffff;
 	color: #00b894;
+}
+
+.centralbox {
+	margin: 24px 6%;
+	padding: 48px;
+	border: 1px solid #1d4d44;
+	border-radius: 20px;
+	background: linear-gradient(135deg, #0b1118 45%, #1d4d44 160%);
+}
+
+.leftside,
+.infocard {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.leftside {
+	width: 52%;
+	padding-right: 4%;
+}
+
+.infocard {
+	width: 44%;
+	padding: 24px 28px;
+	background-color: #181c22;
+	border: 1px solid #1d4d44;
+	border-radius: 14px;
+}
+
+.centralbox h1 {
+	margin: 0 0 24px 0;
+	font-family: "Space Grotesk", Arial, sans-serif;
+	font-size: 72px;
+	line-height: 1;
+	color: #e8edf2;
+}
+
+.dot {
+	color: #00b894;
+}
+
+.intro-text {
+	max-width: 420px;
+	margin-bottom: 28px;
+	font-family: "Space Grotesk", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.6;
+	color: #c3cad2;
+}
+
+.box-title {
+	margin: 0;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #2f3a44;
+	font-family: "Space Mono", monospace;
+	font-size: 11px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #00b894;
+}
+
+.item {
+	position: relative;
+	padding: 18px 0 18px 48px;
+	border-bottom: 1px solid #2f3a44;
+}
+
+.number {
+	position: absolute;
+	left: 0;
+	top: 22px;
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+	color: #00b894;
+}
+
+.item-label {
+	margin: 0 0 4px 0;
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	color: #8fa0b0;
+}
+
+.item h3 {
+	margin: 0 0 4px 0;
+	font-family: "Space Grotesk", Arial, sans-serif;
+}
+
+.item-sub {
+	margin: 0;
+	font-size: 14px;
+	color: #8fa0b0;
+}
+
+.status {
+	margin: 16px 0 0 0;
+	font-family: "Space Mono", monospace;
+	font-size: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.status-dot {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background-color: #00b894;
+}
+
+.aboutme {
+	padding: 40px 6%;
+}
+
+.aboutme h1 {
+	margin-bottom: 8px;
+}
+
+.tagline {
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #ffffff;
+}
+
+.about-text {
+	max-width: 760px;
+	font-size: 16px;
+	line-height: 1.7;
+	color: #c3cad2;
 }
 
 .card {
@@ -227,6 +331,12 @@ footer p {
 	background-color: #00b894;
 }
 
+@media (max-width: 1000px) {
+	.centralbox h1 {
+		font-size: 56px;
+	}
+}
+
 @media (max-width: 900px) {
 	.logo {
 		display: block;
@@ -239,20 +349,6 @@ footer p {
 
 	nav a {
 		padding: 6px 12px 6px 0;
-	}
-
-	.hero {
-		min-height: 0;
-		padding-right: 6%;
-	}
-
-	.photo {
-		position: static;
-		transform: none;
-		display: block;
-		width: 260px;
-		height: 260px;
-		margin-top: 24px;
 	}
 
 	.card-text {
@@ -269,5 +365,27 @@ footer p {
 		max-width: 320px;
 		height: auto;
 		margin-top: 16px;
+	}
+}
+
+@media (max-width: 700px) {
+	.centralbox {
+		margin: 16px 4%;
+		padding: 32px 20px;
+	}
+
+	.leftside,
+	.infocard {
+		display: block;
+		width: 100%;
+		padding-right: 0;
+	}
+
+	.infocard {
+		margin-top: 32px;
+	}
+
+	.centralbox h1 {
+		font-size: 52px;
 	}
 }
