@@ -49,7 +49,7 @@ header {
 .logo {
 	float: left;
 	font-size: 24px;
-	line-height: 40px;
+	line-height: 48px;
 	color: #00b894;
 	text-decoration: none;
 }
@@ -60,18 +60,31 @@ header {
 
 nav {
 	float: right;
+	padding: 4px;
+	background-color: #181c22;
+	border: 1px solid #1d4d44;
+	border-radius: 40px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
 }
 
 nav a {
 	display: inline-block;
-	padding: 8px 14px;
-	color: #ffffff;
+	padding: 6px 18px;
+	color: #c3cad2;
 	text-decoration: none;
+	border-radius: 30px;
 }
 
-nav a:hover,
+nav a:hover {
+	background-color: #1d4d44;
+	color: #ffffff;
+}
+
 nav a.active {
-	color: #00b894;
+	background-color: #00b894;
+	color: #0b1118;
+	font-weight: 600;
+	box-shadow: 0 0 14px rgba(0, 184, 148, 0.45);
 }
 
 .button {
@@ -341,14 +354,17 @@ footer p {
 	.logo {
 		display: block;
 		float: none;
+		line-height: 40px;
 	}
 
 	nav {
 		float: none;
+		display: inline-block;
+		margin-top: 12px;
 	}
 
 	nav a {
-		padding: 6px 12px 6px 0;
+		padding: 6px 12px;
 	}
 
 	.card-text {
